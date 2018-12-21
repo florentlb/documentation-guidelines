@@ -7,5 +7,11 @@
     "DITA": [
       "doc1"
     ]
+  },
+
+  "onboarding": {
+    "Onboarding": [
+      "onboarding"
+    ]
   }
 }
