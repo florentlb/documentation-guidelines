@@ -1,7 +1,7 @@
 ---
 id: pdf_checklist
-title: Building a local PDF
-sidebar_label: Building a local PDF
+title: PDF checklist
+sidebar_label: PDF checklist
 ---
 
 ## Le Checklist

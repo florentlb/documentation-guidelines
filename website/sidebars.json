@@ -1,8 +1,11 @@
 {
   "docs": {
-    "Docusaurus": ["doc1"]
-  },
-  "PDF": {
-    "First Category": ["build_local_pdf", "pdf_checklist"]
+    "PDF": [
+      "build_local_pdf",
+      "pdf_checklist"
+    ],
+    "DITA": [
+      "doc1"
+    ]
   }
 }
