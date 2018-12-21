@@ -60,13 +60,14 @@ class HomeSplash extends React.Component {
 
     return (
       <SplashContainer>
-        <Logo img_src={`${baseUrl}img/docusaurus.svg`} />
+        <Logo img_src={`${baseUrl}img/talend.svg`} />
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
-            <Button href="#try">Try It Out</Button>
-            <Button href={docUrl('doc1.html')}>Example Link</Button>
-            <Button href={docUrl('doc2.html')}>Example Link 2</Button>
+            <Button href={docUrl('build_local_pdf.html')}>Writing</Button>
+            <Button href={docUrl('onboarding.html')}>Onboarding</Button>
+            <Button href={docUrl('contributing.html')}>Contributing</Button>
+
           </PromoSection>
         </div>
       </SplashContainer>
@@ -96,17 +97,16 @@ class Index extends React.Component {
       <div
         className="productShowcaseSection paddingBottom"
         style={{textAlign: 'center'}}>
-        <h2>Feature Callout</h2>
-        <MarkdownBlock>These are features of this project</MarkdownBlock>
+        <MarkdownBlock>Welcome to the Talend documentation guidelines. Whether you are a doc team member or a contributor, you will find here all the information you need about our processes, tools, and best practices.</MarkdownBlock>
       </div>
     );
 
-    const TryOut = () => (
+   const TryOut = () => (
       <Block id="try">
         {[
           {
             content: 'Talk about trying this out',
-            image: `${baseUrl}img/docusaurus.svg`,
+            image: `${baseUrl}img/talend.svg`,
             imageAlign: 'left',
             title: 'Try it Out',
           },
@@ -120,7 +120,7 @@ class Index extends React.Component {
           {
             content:
               'This is another description of how this project is useful',
-            image: `${baseUrl}img/docusaurus.svg`,
+            image: `${baseUrl}img/talend.svg`,
             imageAlign: 'right',
             title: 'Description',
           },
@@ -133,7 +133,7 @@ class Index extends React.Component {
         {[
           {
             content: 'Talk about learning how to use this',
-            image: `${baseUrl}img/docusaurus.svg`,
+            image: `${baseUrl}img/talend.svg`,
             imageAlign: 'right',
             title: 'Learn How',
           },
@@ -146,13 +146,13 @@ class Index extends React.Component {
         {[
           {
             content: 'This is the content of my feature',
-            image: `${baseUrl}img/docusaurus.svg`,
+            image: `${baseUrl}img/talend.svg`,
             imageAlign: 'top',
             title: 'Feature One',
           },
           {
             content: 'The content of my second feature',
-            image: `${baseUrl}img/docusaurus.svg`,
+            image: `${baseUrl}img/talend.svg`,
             imageAlign: 'top',
             title: 'Feature Two',
           },
@@ -193,12 +193,7 @@ class Index extends React.Component {
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
-          <Features />
           <FeatureCallout />
-          <LearnHow />
-          <TryOut />
-          <Description />
-          <Showcase />
         </div>
       </div>
     );

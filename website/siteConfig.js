@@ -13,8 +13,8 @@ const users = [
   {
     caption: 'User1',
     // You will need to prepend the image path with your baseUrl
-    // if it is not '/', like: '/test-site/img/docusaurus.svg'.
-    image: '/img/docusaurus.svg',
+    // if it is not '/', like: '/test-site/img/talend.svg'.
+    image: '/img/talend.svg',
     infoLink: 'https://www.facebook.com',
     pinned: true,
   },
@@ -23,8 +23,8 @@ const users = [
 const siteConfig = {
   title: 'Talend Documentation Guidelines', // Title for your website.
   tagline: 'Best practices, tips, procedures',
-  url: 'https://your-docusaurus-test-site.com', // Your website URL
-  baseUrl: '/', // Base URL for your project */
+  url: 'https://florentlb.github.io', // Your website URL
+  baseUrl: '/documentation-guidelines/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
@@ -38,8 +38,8 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-  //  {doc: 'doc1', label: 'Docs'},
-  //  {doc: 'doc4', label: 'API'},
+    {doc: 'build_local_pdf', label: 'Our docs'},
+    {doc: 'contributing', label: 'Contribute'},
     {page: 'help', label: 'Help'},
   //  {blog: true, label: 'Blog'},
   ],
@@ -48,8 +48,8 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/docusaurus.svg',
-  footerIcon: 'img/docusaurus.svg',
+  headerIcon: 'img/talend_white.svg',
+  footerIcon: 'img/talend_white.svg',
   favicon: 'img/favicon.png',
 
   /* Colors for website */
