@@ -40,7 +40,8 @@ const siteConfig = {
   headerLinks: [
     {doc: 'build_local_pdf', label: 'Our docs'},
     {doc: 'contributing', label: 'Contribute'},
-    {page: 'help', label: 'Help'},
+    {doc: 'onboarding', label: 'Onboarding'},
+   // {page: 'help', label: 'Help'},
   //  {blog: true, label: 'Blog'},
   ],
 
