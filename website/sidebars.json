@@ -12,6 +12,9 @@
   "onboarding": {
     "Onboarding": [
       "onboarding"
+    ],
+    "Documentation reference": [
+      "about_docs"
     ]
   }
 }
