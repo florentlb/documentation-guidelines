@@ -36,15 +36,15 @@ class Footer extends React.Component {
             )}
           </a>
           <div>
-            <h5>Docs</h5>
-            <a href={this.docUrl('build_local_pdf.html', this.props.language)}>
-              PDF Guidelines
+            <h5>Find Information</h5>
+            <a href='https://help.talend.com/'>
+              Talend Help Center
             </a>
-            <a href={this.docUrl('doc2.html', this.props.language)}>
-              Guides (or other categories)
+            <a href='https://community.talend.com/'>
+              Talend Community
             </a>
-            <a href={this.docUrl('doc3.html', this.props.language)}>
-              API Reference (or other categories)
+            <a href='https://www.talend.com/'>
+              Talend Website
             </a>
           </div>
           <div>

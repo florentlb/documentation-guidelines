@@ -11,10 +11,19 @@
 
   "onboarding": {
     "Onboarding": [
-      "onboarding"
+      "onboarding",
+      "onboarding_tools",
+      "onboarding_dita_env"
     ],
     "Documentation reference": [
       "about_docs"
     ]
-  }
+  },
+
+  "contributing": {
+    "Contributing":[
+      "contributing",
+      "contributing_doc_guidelines"
+    ]
+    }
 }
