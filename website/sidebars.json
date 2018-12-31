@@ -13,7 +13,8 @@
     "Onboarding": [
       "onboarding",
       "onboarding_tools",
-      "onboarding_dita_env"
+      "onboarding_dita_env",
+      "onboarding_accounts"
     ],
     "Documentation reference": [
       "about_docs"
