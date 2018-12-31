@@ -5,7 +5,14 @@
       "pdf_checklist"
     ],
     "DITA": [
-      "dita_overview"
+      "dita_overview",
+      "concept",
+      "task",
+      "reference"
+
+    ],
+    "Images": [
+      "images"
     ]
   },
 
