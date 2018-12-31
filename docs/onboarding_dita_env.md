@@ -8,9 +8,7 @@ Before being able to write DITA documentation, you need to setup your environmen
 
 ## Cloning the DITA repository
 
-DITA content is stored on a repository named 
-
-documentation-dita.
+DITA content is stored on a repository named documentation-dita.
 
 If you have never used Git before, it is recommended to follow a tutorial to learn about its key features: you should get up to speed with the basics quickly. Most of the team uses TortoiseGit as a Git client, but you can use another one, like SourceTree for instance, or the command line if you feel comfortable with it.
 
@@ -20,17 +18,13 @@ Read through the following [pages about Git](https://in.talend.com/6325053), an
 
 The Talend oXygenXML project enables to share preferences, transformation and validation scenarios across the team. It is also used to reference additional framework customization. You should always have this project open when authoring in DITA.
 
-Open the 
-
-talend.xpr file located at the root folder of the repository.
+Open the talend.xpr file located at the root folder of the repository.
 
 The Talend project opens into the Project view. The tree view is expanded automatically on the topic currently open in the editor.
 
 ## Adding Talend frameworks
 
-Talend extends the two base DITA oXygenXML frameworks to provide custom templates, UI assistance and as-you-type Schematron validation for authors. Custom frameworks are stored under the 
-
-framework directory.
+Talend extends the two base DITA oXygenXML frameworks to provide custom templates, UI assistance and as-you-type Schematron validation for authors. Custom frameworks are stored under the framework directory.
 
 1. Open Options &gt; Preferences....
 2. Go to Document Type Association &gt; Locations.
