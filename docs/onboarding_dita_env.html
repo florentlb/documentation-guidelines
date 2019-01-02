@@ -1,0 +1,97 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>DITA environment · Talend Documentation Guidelines</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;p&gt;Before being able to write DITA documentation, you need to setup your environment to match Talend requirements.&lt;/p&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="DITA environment · Talend Documentation Guidelines"/><meta property="og:type" content="website"/><meta property="og:url" content="https://florentlb.github.io/documentation-guidelines/index.html"/><meta property="og:description" content="&lt;p&gt;Before being able to write DITA documentation, you need to setup your environment to match Talend requirements.&lt;/p&gt;
+"/><meta property="og:image" content="https://florentlb.github.io/documentation-guidelines/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://florentlb.github.io/documentation-guidelines/img/docusaurus.png"/><link rel="shortcut icon" href="/documentation-guidelines/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/documentation-guidelines/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/documentation-guidelines/"><img class="logo" src="/documentation-guidelines/img/talend_white.svg" alt="Talend Documentation Guidelines"/><h2 class="headerTitleWithLogo">Talend Documentation Guidelines</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/documentation-guidelines/docs/build_local_pdf" target="_self">Our docs</a></li><li class=""><a href="/documentation-guidelines/docs/contributing" target="_self">Contribute</a></li><li class="siteNavGroupActive"><a href="/documentation-guidelines/docs/onboarding" target="_self">Onboarding</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>Onboarding</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Onboarding</h3><ul><li class="navListItem"><a class="navItem" href="/documentation-guidelines/docs/onboarding">Onboarding checklist</a></li><li class="navListItem"><a class="navItem" href="/documentation-guidelines/docs/onboarding_tools">Documentation tools</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/documentation-guidelines/docs/onboarding_dita_env">DITA environment</a></li><li class="navListItem"><a class="navItem" href="/documentation-guidelines/docs/onboarding_accounts">Documentation tools</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">DITA environment</h1></header><article><div><span><p>Before being able to write DITA documentation, you need to setup your environment to match Talend requirements.</p>
+<h2><a class="anchor" aria-hidden="true" id="cloning-the-dita-repository"></a><a href="#cloning-the-dita-repository" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Cloning the DITA repository</h2>
+<p>DITA content is stored on a repository named documentation-dita.</p>
+<p>If you have never used Git before, it is recommended to follow a tutorial to learn about its key features: you should get up to speed with the basics quickly. Most of the team uses TortoiseGit as a Git client, but you can use another one, like SourceTree for instance, or the command line if you feel comfortable with it.</p>
+<p>Read through the following <a href="https://in.talend.com/6325053">pages about Git</a>, and perform the steps explained in &quot;Cloning a repository/How to clone a repository from Github&quot;.</p>
+<h2><a class="anchor" aria-hidden="true" id="loading-the-talend-dita-project"></a><a href="#loading-the-talend-dita-project" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Loading the Talend DITA project</h2>
+<p>The Talend oXygenXML project enables to share preferences, transformation and validation scenarios across the team. It is also used to reference additional framework customization. You should always have this project open when authoring in DITA.</p>
+<p>Open the talend.xpr file located at the root folder of the repository.</p>
+<p>The Talend project opens into the Project view. The tree view is expanded automatically on the topic currently open in the editor.</p>
+<h2><a class="anchor" aria-hidden="true" id="adding-talend-frameworks"></a><a href="#adding-talend-frameworks" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Adding Talend frameworks</h2>
+<p>Talend extends the two base DITA oXygenXML frameworks to provide custom templates, UI assistance and as-you-type Schematron validation for authors. Custom frameworks are stored under the framework directory.</p>
+<ol>
+<li>Open Options &gt; Preferences....</li>
+<li>Go to Document Type Association &gt; Locations.</li>
+<li>Click Add.</li>
+<li>Enter <code>${pd}/framework</code>.</li>
+<li>Click Apply then OK.</li>
+<li>Open the file <code>talend.xpr</code>.</li>
+</ol>
+<p>You should see Talend DITA and Talend DITA map under Options &gt; Preferences &gt; Document Type Association.</p>
+<h2><a class="anchor" aria-hidden="true" id="setting-up-your-author-name"></a><a href="#setting-up-your-author-name" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Setting up your author name</h2>
+<p>Add your name as a custom oXygenXML variable to populate the map template files.</p>
+<ol>
+<li>Open Options &gt; Preferences.</li>
+<li>In Custom Editor Variables, click New.</li>
+<li>Set the variable name to ${author}, the value to your email username e.g. fviolette, and a description.</li>
+</ol>
+<p>When you create a new DITA map from one of the Talend Map templates, you will be added automatically as the author.</p>
+<blockquote>
+<p><strong>Note</strong>: If you get a broken reference, ask Information Architects to add the author name to the Author scheme within the Taxonomy.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="enabling-the-metadata-assistant"></a><a href="#enabling-the-metadata-assistant" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Enabling the metadata assistant</h2>
+<p>In the Author view, the layout helps you tag DITA maps faster, using add, tag and delete controls.</p>
+<ol>
+<li>Open a DITA map.</li>
+<li>Click the Styles drop-down menu in the toolbar.</li>
+<li>Click Talend Map.
+The icons <img src="https://talend.github.io/documentation-dita/images/add_12.png" alt="Image">, <img src="https://talend.github.io/documentation-dita/images/delete_12.png" alt="Image"> and <img src="https://talend.github.io/documentation-dita/images/meta.png" alt="Image"> appear above the Author, Category, Product name, Versions and Platform labels.</li>
+</ol>
+<p>A footer with links to Fluid Topics, the DITA specification, the Doc Sharepoint folder, the GitHub repository, the online version of the docs and feedback is added.</p>
+<blockquote>
+<p><strong>Note</strong>: Play with the buttons to get a sense of how this system works. You may get warnings along the way: trying to fix them is a good exercise.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="loading-the-talend-dita-ot"></a><a href="#loading-the-talend-dita-ot" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Loading the Talend DITA-OT</h2>
+<p>By cloning the documentation-dita Git repository, you inherit from Talend's reference copy of the DITA Open Toolkit (DITA-OT), stored under build/DITA-OT. This copy contains some additional plugins and plugin customizations compared to the standard distribution package. You need to reference the Talend DITA Open Toolkit in oXygenXML to publish a PDF with the Talend processing and layout. Publishing with the standard PDF transformation will not give the same results.</p>
+<ol>
+<li>Open Options &gt; Preferences....</li>
+<li>Select DITA.</li>
+<li>In the DITA Open Toolkit section, select Custom.</li>
+<li>Navigate and select the build/DITA-OT folder in your clone of the documentation-dita repository.For Windows users: C:\git\documentation-dita\build\DITA-OT or equivalent.</li>
+<li>Click Apply then OK.</li>
+</ol>
+<p>You can now publish a Talend PDF by creating a transformation scenario under Global and supply the parameters below:</p>
+<table>
+<thead>
+<tr><th>Parameter</th><th>Value</th></tr>
+</thead>
+<tbody>
+<tr><td>args.filter</td><td>file:/C:/git/documentation-dita/ditaval/tbd_offline.ditaval</td></tr>
+<tr><td>args.gen.task.lbl</td><td>YES</td></tr>
+<tr><td>dita.dir</td><td>${configured.ditaot.dir}</td></tr>
+<tr><td>generate.copy.outer</td><td>3</td></tr>
+</tbody>
+</table>
+<p>Note: The DITAVAL configured in the scenario depends on what you want to publish (args.filter parameter). DITAVALs for PDF end by _offline.</p>
+<h2><a class="anchor" aria-hidden="true" id="installing-the-fluid-topics-oxygenxml-add-on"></a><a href="#installing-the-fluid-topics-oxygenxml-add-on" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Installing the Fluid Topics oXygenXML add-on</h2>
+<p>The Fluid Topics add-on for oXygenXML enables you to directly upload content to the Fluid Topics <a href="https://talend-rc.fluidtopics.net/">test environment</a>. For more information, refer to the official <a href="https://doc.antidot.net/reader/hKklVq_FN8NIao3uPW7Ryg/qwogka8gZdBQFTQ7xX13Jw">documentation</a>.</p>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 12/31/2018 by fleborgne</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/documentation-guidelines/docs/onboarding_tools"><span class="arrow-prev">← </span><span>Documentation tools</span></a><a class="docs-next button" href="/documentation-guidelines/docs/onboarding_accounts"><span>Documentation tools</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#cloning-the-dita-repository">Cloning the DITA repository</a></li><li><a href="#loading-the-talend-dita-project">Loading the Talend DITA project</a></li><li><a href="#adding-talend-frameworks">Adding Talend frameworks</a></li><li><a href="#setting-up-your-author-name">Setting up your author name</a></li><li><a href="#enabling-the-metadata-assistant">Enabling the metadata assistant</a></li><li><a href="#loading-the-talend-dita-ot">Loading the Talend DITA-OT</a></li><li><a href="#installing-the-fluid-topics-oxygenxml-add-on">Installing the Fluid Topics oXygenXML add-on</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/documentation-guidelines/" class="nav-home"><img src="/documentation-guidelines/img/talend_white.svg" alt="Talend Documentation Guidelines" width="66" height="58"/></a><div><h5>Find Information</h5><a href="https://help.talend.com/">Talend Help Center</a><a href="https://community.talend.com/">Talend Community</a><a href="https://www.talend.com/">Talend Website</a></div><div><h5>Community</h5><a href="/documentation-guidelines/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/documentation-guidelines/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" href="https://github.com/florentlb/documentation-guidelines" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/documentation-guidelines/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2019 Talend</section></footer></div></body></html>
