@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Commonly-used CCMS elements · Talend Documentation Guidelines</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;p&gt;This table provides you a list of the elements that are frequently used.&lt;/p&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Commonly-used CCMS elements · Talend Documentation Guidelines"/><meta property="og:type" content="website"/><meta property="og:url" content="https://florentlb.github.io/documentation-guidelines/index.html"/><meta property="og:description" content="&lt;p&gt;This table provides you a list of the elements that are frequently used.&lt;/p&gt;
+"/><meta property="og:image" content="https://florentlb.github.io/documentation-guidelines/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://florentlb.github.io/documentation-guidelines/img/docusaurus.png"/><link rel="shortcut icon" href="/documentation-guidelines/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><link rel="stylesheet" href="/documentation-guidelines/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/documentation-guidelines/"><img class="logo" src="/documentation-guidelines/img/talend_white.svg" alt="Talend Documentation Guidelines"/><h2 class="headerTitleWithLogo">Talend Documentation Guidelines</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/documentation-guidelines/docs/build_local_pdf" target="_self">Our docs</a></li><li class=""><a href="/documentation-guidelines/docs/contributing" target="_self">Contribute</a></li><li class=""><a href="/documentation-guidelines/docs/onboarding" target="_self">Onboarding</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span>DITA</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">PDF</h3><ul><li class="navListItem"><a class="navItem" href="/documentation-guidelines/docs/build_local_pdf">Building a local PDF</a></li><li class="navListItem"><a class="navItem" href="/documentation-guidelines/docs/pdf_checklist">PDF checklist</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">DITA</h3><ul><li class="navListItem"><a class="navItem" href="/documentation-guidelines/docs/dita_overview">DITA Overview</a></li><li class="navListItem"><a class="navItem" href="/documentation-guidelines/docs/concept">Concept Topic</a></li><li class="navListItem"><a class="navItem" href="/documentation-guidelines/docs/task">Task Topic</a></li><li class="navListItem"><a class="navItem" href="/documentation-guidelines/docs/reference">Reference Topic</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/documentation-guidelines/docs/ditaelements">CCMS Elements</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Images</h3><ul><li class="navListItem"><a class="navItem" href="/documentation-guidelines/docs/images">Images</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Commonly-used CCMS elements</h1></header><article><div><span><p>This table provides you a list of the elements that are frequently used.</p>
+<table>
+<thead>
+<tr><th>Element</th><th>Text Item</th><th>Example</th></tr>
+</thead>
+<tbody>
+<tr><td>apiname</td><td>API class, method, event, function, or data structure</td><td>Add an application/json header in <code>&lt;apiname&gt;</code>PUT<code>&lt;/apiname&gt;</code> and <code>&lt;apiname&gt;</code>POST<code>&lt;/apiname&gt;</code> requests.</td></tr>
+<tr><td>codeblock</td><td>Code block</td><td><code>&lt;codeblock&gt;</code>{&quot;subject&quot;: &quot;My printer is on fire!&quot;}<code>&lt;/codeblock&gt;</code></td></tr>
+<tr><td>codeph</td><td>Code phrase or snippet within the main flow of text</td><td>Type the <code>&lt;codeph&gt;</code>id<code>&lt;/codeph&gt;</code> attribute of the API response.</td></tr>
+<tr><td>filepath</td><td>File name, file path, URL path, or a directory name</td><td>Go to <code>&lt;/filepath&gt;</code>C:\Users\username\Desktop<code>&lt;/filepath&gt;</code>.</td></tr>
+<tr><td>cite</td><td>Full name of a Talend reference document</td><td>Refer to the <code>&lt;cite&gt;</code>Talend Studio User Guide<code>&lt;/cite&gt;</code>.</td></tr>
+<tr><td>key</td><td>Keyboard keys</td><td>Press <code>&lt;key&gt;F4</code></key> to run the Job.</td></tr>
+<tr><td>xref</td><td>Link to an external web address or a reference topic</td><td>In this release, the following bugs were fixed: <code>&lt;xref href=&quot;https://jira.talendforge.org/issues/?filter=28360&quot;/&gt;</code>.&gt;</td></tr>
+<tr><td>menucascade</td><td>Navigation path</td><td>Click <code>menucascade&gt;``&lt;uicontrol&gt;</code>Profile Settings<code>&lt;/uicontrol&gt;``&lt;uicontrol&gt;</code>Input<code>&lt;/uicontrol&gt;``&lt;/menucascade&gt;</code>.</td></tr>
+<tr><td>parmname</td><td>Parameter or property name in ongoing text</td><td></td></tr>
+<tr><td>uicontrol</td><td>User interface elements</td><td>Select <code>&lt;uicontrol&gt;</code>Region<code>&lt;/uicontrol&gt;</code>.</td></tr>
+<tr><td>userinput</td><td>Commands or information that the user needs to type into the user interface</td><td>Type <code>&lt;userinput&gt;</code>awesome<code>&lt;/userinput&gt;</code> in the field provided.</td></tr>
+<tr><td>varname</td><td>Variables that users need to provide to the software application</td><td></td></tr>
+</tbody>
+</table>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 1/2/2019 by tlnd-msara</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/documentation-guidelines/docs/reference"><span class="arrow-prev">← </span><span>Reference Topic</span></a><a class="docs-next button" href="/documentation-guidelines/docs/images"><span>Images</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/documentation-guidelines/" class="nav-home"><img src="/documentation-guidelines/img/talend_white.svg" alt="Talend Documentation Guidelines" width="66" height="58"/></a><div><h5>Find Information</h5><a href="https://help.talend.com/">Talend Help Center</a><a href="https://community.talend.com/">Talend Community</a><a href="https://www.talend.com/">Talend Website</a></div><div><h5>Community</h5><a href="/documentation-guidelines/en/users.html">User Showcase</a><a href="http://stackoverflow.com/questions/tagged/" target="_blank" rel="noreferrer noopener">Stack Overflow</a><a href="https://discordapp.com/">Project Chat</a><a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a></div><div><h5>More</h5><a href="/documentation-guidelines/blog">Blog</a><a href="https://github.com/">GitHub</a><a class="github-button" href="https://github.com/florentlb/documentation-guidelines" data-icon="octicon-star" data-count-href="/facebook/docusaurus/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/documentation-guidelines/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2019 Talend</section></footer></div></body></html>
