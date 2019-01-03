@@ -10,7 +10,6 @@
       "task",
       "reference",
       "ditaelements"
-
     ],
     "Images": [
       "images"
@@ -32,7 +31,7 @@
   "contributing": {
     "Contributing":[
       "contributing",
-      "contributing_doc_guidelines"
+      "contributing_doc_guidelines",
       "contributing_jira"
     ]
     }
