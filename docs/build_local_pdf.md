@@ -36,7 +36,3 @@ Once a custom PDF transformation scenario is created, you can build your dita ma
 3. Click **Apply associated** to start the transformation. If successful, the PDF opens autmatically. If not, an error log is displayed in Oxygen.
 
 You can now check the content of the PDF. Use the [PDF Checklist](pdf_checklist.md) to check for common errors in PDFs.
-
-## Read also
-
-* [PDF Checklist](pdf_checklist.md)
