@@ -31,3 +31,11 @@ Before being able to generate a local version of the site, you need to install *
 4. Run the site locally by using ``yarn start``.
 
 The website is then built locally. Pages that are already created are reloaded when a modification is made. For new files or some specific assets, you need to rebuild the site to see the changes.
+
+## Publishing the site
+
+Site builds and publications are done from the **publish** branch. It allows to maintain the main work branch separate from the content to be published.
+
+When the **master** branch is in a publishable state, merge all changes to the **publish** branch before building the site.
+
+If the **master** branch is not in a publisahble state, cherry pick what needs to be published to the **publish** branch.
